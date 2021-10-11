@@ -239,7 +239,11 @@ input[type="checkbox"], input[type="radio"] {
 body {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  height: 100vh;
+  background: #621402;
+}
+
+.bg {
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url(../img/bg.jpg);
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -485,5 +489,32 @@ body {
   cursor: pointer;
   color: #ffffff;
   margin: 10px 0;
+}
+
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.scheme path.booked {
+  fill: rgba(255, 255, 255, 0.05);
+}
+
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
+.active {
+  fill: #e47216 !important;
 }
 /*# sourceMappingURL=style.css.map */

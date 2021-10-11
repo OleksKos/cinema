@@ -6,7 +6,10 @@ body {
   // font-size: 14px;
   // line-height: 16px;
   color: #ffffff;
-  height: 100vh;
+  background: #621402;
+}
+.bg {
+  min-height: 100vh;
   background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -165,9 +168,6 @@ body {
   &__geo {
     width: 100%;
   }
-  &__adress {
-    // color: #ffffff;
-  }
 }
 #street {
   min-width: 470px;
@@ -191,4 +191,25 @@ body {
   cursor: pointer;
   color: #ffffff;
   margin: 10px 0;
+}
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+  & path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+  & path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  & path.booked {
+    fill: rgba(255, 255, 255, 0.05);
+    &:hover {
+      fill: rgba(255, 255, 255, 0.05);
+      cursor: not-allowed;
+    }
+  }
+}
+.active {
+  fill: rgba(228, 114, 22, 1) !important;
 }
